@@ -44,14 +44,16 @@
   <!-- ✅ PASSWORD PROTECTION -->
   <script>
     var password = prompt("Enter password to view Casa Rena manual:");
-    if (password !== "casarena2025") {
+    if (!password || password.trim() !== "casarena2025") {
       document.body.innerHTML = "<h1 style='text-align:center;'>🚫 Access Denied</h1>";
     }
   </script>
 
   <div class="content">
     <h1>🏡 Welcome to Casa Rena!</h1>
+
     <p>Sunshine? Check. Sangria? Double check. Everything else you need to know? Right here—simple, breezy, and just the right amount of bossy.</p>
+
     <p><strong>🔑 Getting In</strong></p>
     <ul>
       <li>Look at the inside left edge of the side gate—there’s a slim plastic housing.</li>
@@ -137,5 +139,6 @@
       <li>Be careful — tiles are slippery</li>
     </ul>
   </div>
+
 </body>
 </html>
