@@ -40,105 +40,100 @@
   </style>
 </head>
 <body>
-
-  <!-- ✅ PASSWORD PROTECTION -->
   <script>
     var password = prompt("Enter password to view Casa Rena manual:");
     if (!password || password.trim() !== "casarena2025") {
-      document.body.innerHTML = "<h1 style='text-align:center;'>🚫 Access Denied</h1>";
+      document.write("<h1 style='text-align:center;'>🚫 Access Denied</h1>");
+    } else {
+      document.write(`
+
+      <div class="content">
+        <h1>🏡 Welcome to Casa Rena!</h1>
+
+        <p>Sunshine? Check. Sangria? Double check. Everything else you need to know? Right here—simple, breezy, and just the right amount of bossy.</p>
+
+        <h2>🔑 Getting In</h2>
+        <ul>
+          <li>Side gate key: on the inside left edge of the gate, in a plastic housing. Flick off the cap, use the key, reseal it after.</li>
+          <li>Main key: go up the side stairs to the roof terrace. Look behind the rear post of the wooden bedframe.</li>
+          <li>Lockbox code: 1684</li>
+          <li>Inside: front door key + safe key (safe is in main bedroom wardrobe)</li>
+        </ul>
+
+        <h2>🚨 Disarming the Alarm</h2>
+        <ul>
+          <li>Open the front door (pull and turn key anti-clockwise).</li>
+          <li>Alarm will beep — go inside and reach on top of the extractor fan (nearest the hob).</li>
+          <li>Grab the round white/silver fob and tap it to the alarm panel.</li>
+          <li>Return fob and key to hiding spots.</li>
+        </ul>
+
+        <h2>🧷 Keys Inside (by the TV)</h2>
+        <ul>
+          <li>Electric gate fob</li>
+          <li>Security fob</li>
+          <li>Side gate (peach polish)</li>
+          <li>Front gate (pink polish) — use this only when leaving finally</li>
+          <li>Pool cupboard (blue polish)</li>
+        </ul>
+
+        <h2>🏠 While You’re In</h2>
+        <ul>
+          <li>Kitchen bifold: open single door first, then fold remaining panels</li>
+          <li>Rear sliding doors: unbolt and press latches to unlock. Exit from terrace only.</li>
+          <li>Bedroom windows can stay open — they aren’t connected to the alarm</li>
+        </ul>
+
+        <h2>🍷 Wine Fridge</h2>
+        <ul>
+          <li>Switch is on top inside panel</li>
+          <li>Enjoy anything inside — just replace like for like</li>
+        </ul>
+
+        <h2>👋 Leaving (Short Trip or Final Checkout)</h2>
+        <ul>
+          <li>Alarm: press the “house + person outside” icon</li>
+          <li>Wait for beeps, shut the door — it locks itself</li>
+          <li>Pull and turn key clockwise for extra lock</li>
+        </ul>
+
+        <h2>🧼 Departure Cleaning Checklist</h2>
+        <ul>
+          <li>Toaster: empty crumbs + clean grills</li>
+          <li>Dishwasher: empty and clean (no metal left inside)</li>
+          <li>Use eco-speedy wash: 42 min (running plate icon + eco light)</li>
+          <li>Check and clean the dishwasher filter and silver disc at bottom</li>
+          <li>Fridge: remove anything expiring, wipe shelves, label jars</li>
+          <li>Coffee: run Nespresso without pod. Do NOT pour coffee grounds in sink</li>
+          <li>Bins: tie and take to main road every 2 days minimum. Keep lid sealed</li>
+          <li>Bleach sinks and toilets before leaving</li>
+          <li>Laundry: wash bedding/towels if time. Otherwise, leave dry in basket</li>
+          <li>Leave washer door open, wipe rubber seal, and drawer (if used)</li>
+        </ul>
+
+        <h2>⚡ Electricity Tips</h2>
+        <p>There are 3 tariffs:</p>
+        <ul>
+          <li>💤 Off Peak: Midnight–8am</li>
+          <li>😌 Mid Peak: 8–10am, 2–6pm, 10–Midnight</li>
+          <li>🔥 Peak: 10am–2pm, 6–10pm</li>
+        </ul>
+        <ul>
+          <li>Run hot cycles at night using delay timer</li>
+          <li>Use cold washes any time</li>
+        </ul>
+
+        <h2>🏊 Pool</h2>
+        <ul>
+          <li>Use the skimming net (on the wall) — show off your Baywatch skills</li>
+          <li>⚠️ Do not touch the pool controls</li>
+          <li>Russell the Pool Guy can help for €20</li>
+          <li>Tiles are slippery — walk carefully</li>
+        </ul>
+
+      </div>
+      `);
     }
   </script>
-
-  <div class="content">
-    <h1>🏡 Welcome to Casa Rena!</h1>
-
-    <p>Sunshine? Check. Sangria? Double check. Everything else you need to know? Right here—simple, breezy, and just the right amount of bossy.</p>
-
-    <p><strong>🔑 Getting In</strong></p>
-    <ul>
-      <li>Look at the inside left edge of the side gate—there’s a slim plastic housing.</li>
-      <li>Flick off the cap, grab the key, unlock the gate, then put it back and reseal the cap.</li>
-      <li>Go up the side stairs to the roof terrace.</li>
-      <li>Find the wooden four-poster bed frame.</li>
-      <li>The lockbox is on the back side of the rear upright post, closest to the back wall.</li>
-      <li>Lockbox code: 1684</li>
-      <li>Inside you’ll find: Unmarked front door key and Safe key (attached)</li>
-    </ul>
-
-    <p><strong>🚨 Alarm Instructions</strong></p>
-    <ul>
-      <li>Pull the front door towards you while turning the key anti-clockwise.</li>
-      <li>The alarm will start beeping.</li>
-      <li>Reach above the stove extractor fan, grab the fob.</li>
-      <li>Tap it to the alarm panel by the door to disable.</li>
-      <li>Return fob and key to their hiding places.</li>
-    </ul>
-
-    <p><strong>🧷 Keys (by the TV):</strong></p>
-    <ul>
-      <li>Electric gate fob</li>
-      <li>Security fob</li>
-      <li>Side gate key (peach)</li>
-      <li>Front gate key (pink)</li>
-      <li>Pool cupboard key (blue)</li>
-    </ul>
-
-    <p><strong>🏠 While You're In</strong></p>
-    <ul>
-      <li>Kitchen bi-fold: open the single door first, then fold the rest.</li>
-      <li>Rear sliding doors: unlock and unscrew bolt — do not exit from the rear.</li>
-      <li>Bedroom windows: can stay open when you leave (they're security-barred).</li>
-    </ul>
-
-    <p><strong>🍷 Wine Fridge</strong></p>
-    <ul>
-      <li>On/off switch is on the inside top panel.</li>
-      <li>You may use the wine/beer/food — please replace what you use.</li>
-    </ul>
-
-    <p><strong>👋 When You’re Leaving</strong></p>
-    <ul>
-      <li>Press the house-with-person icon to arm the alarm.</li>
-      <li>Close the door — it auto-locks.</li>
-      <li>Pull the door shut and lock it for extra safety.</li>
-    </ul>
-
-    <p><strong>🧼 Departure Checklist</strong></p>
-    <ul>
-      <li>Clean the toaster (crumbs!)</li>
-      <li>Empty and clean dishwasher</li>
-      <li>Remove metal items immediately after washing</li>
-      <li>Use eco-speedy wash — symbol: running plate + eco light</li>
-      <li>Wipe fridge shelves, throw out expired food</li>
-      <li>Label jars when opening</li>
-      <li>No bread left behind</li>
-      <li>Throw out old dishcloths</li>
-      <li>Empty bins and take them to communal bins every 2 days</li>
-      <li>Bleach the sinks + toilets</li>
-      <li>Wipe down all surfaces + use insect floor wash</li>
-      <li>Laundry: wash if time, otherwise leave dry in basket</li>
-      <li>Leave washer door open, wipe seal, clean drawer</li>
-    </ul>
-
-    <p><strong>⚡ Electricity Tips</strong></p>
-    <ul>
-      <li>🛏 Off Peak: Midnight to 8am (weekdays + weekends)</li>
-      <li>😌 Mid Peak: 8am - 10am, 2pm - 6pm, 10pm - Midnight</li>
-      <li>🔥 Peak: 10am - 2pm, 6pm - 10pm</li>
-      <li>Cold washes can run anytime</li>
-      <li>For hot washes, use delay timer for off-peak</li>
-      <li>Same for dishwasher</li>
-    </ul>
-
-    <p><strong>🏊 Pool Care</strong></p>
-    <ul>
-      <li>Use the net to skim the pool</li>
-      <li>⚠️ Don’t touch the pool controls</li>
-      <li>Call Russell the Pool Guy for help (€20)</li>
-      <li>Shower before entering — sunscreen clogs filters</li>
-      <li>Be careful — tiles are slippery</li>
-    </ul>
-  </div>
-
 </body>
 </html>
